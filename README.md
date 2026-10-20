@@ -12,7 +12,9 @@
 
 # Salut, je suis Nathan 👋
 
-**Co-Président @ [YorkHost](https://yorkhost.fr)** · France 🇫🇷
+**Responsable Infrastructure @ [YorkHost](https://yorkhost.fr)** · Brest 🇫🇷
+
+🎓 BTS SIO option SISR (2e année)
 
 > Passionné par l'informatique depuis le collège
 
@@ -33,8 +35,8 @@ Scripts et outils internes pour automatiser les tâches répétitives, optimiser
 **🔌 Backend & APIs**
 Conception de systèmes backend robustes, gestion de bases de données et développement d'APIs pour connecter les services entre eux.
 
-**👥 Leadership & gestion client**
-Pilotage de projets, coordination d'équipes et amélioration des workflows pour garantir des services fiables et un support client de qualité.
+**🖥️ Infra & support**
+L'infra YorkHost au quotidien : maintenance des serveurs, sauvegardes, résolution d'incidents et support technique aux clients.
 
 ---
 
@@ -44,24 +46,33 @@ Pilotage de projets, coordination d'équipes et amélioration des workflows pour
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/k3s-FFC61C?style=flat&logo=k3s&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white)
+
+**Réseau & Services**
+
+![PowerDNS](https://img.shields.io/badge/PowerDNS-0F3C5B?style=flat&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat&logo=cisco&logoColor=white)
+![Postfix](https://img.shields.io/badge/Postfix-555555?style=flat&logoColor=white)
 
 **Dev & Automatisation**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat&logo=gitlab&logoColor=white)
 ![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white)
 
 **Panels & Outils**
 
 ![Pterodactyl](https://img.shields.io/badge/Pterodactyl-0E4688?style=flat&logo=pterodactyl&logoColor=white)
-![Wisp](https://img.shields.io/badge/Wisp-6C47FF?style=flat&logo=pterodactyl&logoColor=white)
 ![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=flat&logo=cpanel&logoColor=white)
 ![Virtualizor](https://img.shields.io/badge/Virtualizor-0078D7?style=flat&logo=server&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?style=flat&logo=phpmyadmin&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat&logo=zabbix&logoColor=white)
 ![HostBill](https://img.shields.io/badge/HostBill-004B87?style=flat&logoColor=white)
 ![NetBox](https://img.shields.io/badge/NetBox-9B59B6?style=flat&logo=netbox&logoColor=white)
 
@@ -69,20 +80,23 @@ Pilotage de projets, coordination d'équipes et amélioration des workflows pour
 
 ### 📦 Projets
 
+**🌐 YorkHost Infrastructure**
+Cluster Proxmox multi-nœuds, sauvegardes PBS avec namespaces, nodes GAME (migration Wisp vers Pterodactyl), web cPanel/WHM, DNS autoritatif PowerDNS, cluster k3s exposé via Cloudflare Tunnel, monitoring Grafana/Zabbix.
+
+**🧰 Utils**
+Monorepo perso : portail Node.js qui regroupe mes mini-apps et outils du quotidien.
+`Node.js` · `Express` · `SQLite`
+
+**🧪 Lab infra Proxmox**
+Infra de test montée et gérée en As Code avec Ansible : DNS autoritatif (PowerDNS, Bind), annuaire LDAP + Kerberos, VLAN et router-on-a-stick sur Cisco.
+`Proxmox` · `Ansible` · `PowerDNS` · `LDAP` · `Kerberos` · `Cisco IOS`
+
 **🤖 YorkBot**
-Bot Discord polyvalent — gestion de tickets support, intégration APIs, statistiques et rapports automatisés. Centralise les outils d'administration de YorkHost.
+Bot Discord polyvalent : tickets support, intégration APIs, statistiques et rapports automatisés.
 `Node.js` · `PM2` · `Discord.js`
 
 **⚙️ Automation Scripts**
-Scripts d'installation, configuration et déploiement de services sur serveurs Pterodactyl. Réduit l'erreur humaine et accélère la mise en place des serveurs de jeux.
-`Bash` · `Python` · `Pterodactyl API`
-
-**🏗️ [BackupD](https://github.com/Legendary3731/backupd)**
-Daemon de backup pour Proxmox — orchestration `vzdump`, workers async, auth HMAC, rotation de clés, logs colorés.
-`Python` · `FastAPI` · `Proxmox`
-
-**🌐 YorkHost Infrastructure**
-Supervision de serveurs, réseaux et services (PVE, nodes GAME, WEB cPanel, VPS KVM/LXC), monitoring temps réel et outils internes.
+Scripts d'installation, de configuration et de déploiement sur Pterodactyl.
 
 ---
 
@@ -91,7 +105,7 @@ Supervision de serveurs, réseaux et services (PVE, nodes GAME, WEB cPanel, VPS 
 <div align="center">
 
 > 🔒 La majorité de mon travail se trouve dans des dépôts privés.
-> Le dépôt public [`backupd`](https://github.com/Legendary3731/backupd) en est un aperçu.
+> Mes [dépôts publics](https://github.com/Legendary3731?tab=repositories) en donnent un aperçu.
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Legendary3731&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff)](https://github.com/Legendary3731)
 
@@ -107,7 +121,9 @@ Supervision de serveurs, réseaux et services (PVE, nodes GAME, WEB cPanel, VPS 
 
 # Hi, I'm Nathan 👋
 
-**Co-President @ [YorkHost](https://yorkhost.fr)** · France 🇫🇷
+**Infrastructure Lead @ [YorkHost](https://yorkhost.fr)** · Brest, France 🇫🇷
+
+🎓 BTS SIO, SISR track (2nd year)
 
 > Passionate about IT since middle school
 
@@ -128,8 +144,8 @@ Building internal scripts and tools to automate repetitive tasks, optimize serve
 **🔌 Backend & APIs**
 Designing robust backend systems, managing databases, and developing APIs to connect multiple services seamlessly.
 
-**👥 Leadership & Client Management**
-Overseeing projects, coordinating teams, and improving workflows to provide reliable services and excellent client support.
+**🖥️ Infra & Support**
+Day-to-day YorkHost infrastructure: server maintenance, backups, incident handling and technical support for clients.
 
 ---
 
@@ -139,24 +155,33 @@ Overseeing projects, coordinating teams, and improving workflows to provide reli
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/k3s-FFC61C?style=flat&logo=k3s&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white)
+
+**Network & Services**
+
+![PowerDNS](https://img.shields.io/badge/PowerDNS-0F3C5B?style=flat&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat&logo=cisco&logoColor=white)
+![Postfix](https://img.shields.io/badge/Postfix-555555?style=flat&logoColor=white)
 
 **Dev & Automation**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat&logo=gitlab&logoColor=white)
 ![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white)
 
 **Panels & Tools**
 
 ![Pterodactyl](https://img.shields.io/badge/Pterodactyl-0E4688?style=flat&logo=pterodactyl&logoColor=white)
-![Wisp](https://img.shields.io/badge/Wisp-6C47FF?style=flat&logo=pterodactyl&logoColor=white)
 ![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=flat&logo=cpanel&logoColor=white)
 ![Virtualizor](https://img.shields.io/badge/Virtualizor-0078D7?style=flat&logo=server&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?style=flat&logo=phpmyadmin&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat&logo=zabbix&logoColor=white)
 ![HostBill](https://img.shields.io/badge/HostBill-004B87?style=flat&logoColor=white)
 ![NetBox](https://img.shields.io/badge/NetBox-9B59B6?style=flat&logo=netbox&logoColor=white)
 
@@ -164,20 +189,23 @@ Overseeing projects, coordinating teams, and improving workflows to provide reli
 
 ### 📦 Projects
 
+**🌐 YorkHost Infrastructure**
+Multi-node Proxmox cluster, namespaced PBS backups, game nodes (Wisp to Pterodactyl migration), cPanel/WHM web hosting, PowerDNS authoritative DNS, k3s cluster exposed through Cloudflare Tunnel, Grafana/Zabbix monitoring.
+
+**🧰 Utils**
+Personal monorepo: a Node.js portal bundling my everyday mini-apps and tools.
+`Node.js` · `Express` · `SQLite`
+
+**🧪 Proxmox Infra Lab**
+Test infrastructure built and managed as code with Ansible: authoritative DNS (PowerDNS, Bind), LDAP + Kerberos directory, VLANs and router-on-a-stick on Cisco.
+`Proxmox` · `Ansible` · `PowerDNS` · `LDAP` · `Kerberos` · `Cisco IOS`
+
 **🤖 YorkBot**
-A versatile Discord bot — support ticket management, API integrations, automated stats and reports. Centralizes YorkHost's admin tools.
+A versatile Discord bot: support tickets, API integrations, automated stats and reports.
 `Node.js` · `PM2` · `Discord.js`
 
 **⚙️ Automation Scripts**
-Installation, configuration and service deployment scripts for Pterodactyl servers. Reduces human error and speeds up game server onboarding.
-`Bash` · `Python` · `Pterodactyl API`
-
-**🏗️ [BackupD](https://github.com/Legendary3731/backupd)**
-A backup daemon for Proxmox — `vzdump` orchestration, async workers, HMAC auth, key rotation, colored logs.
-`Python` · `FastAPI` · `Proxmox`
-
-**🌐 YorkHost Infrastructure**
-Managing servers, networks and services (PVE, GAME nodes, WEB cPanel/WHM, KVM VPS/LXC) — real-time monitoring and internal coordination tools.
+Install, configuration and deployment scripts for Pterodactyl.
 
 ---
 
@@ -186,7 +214,7 @@ Managing servers, networks and services (PVE, GAME nodes, WEB cPanel/WHM, KVM VP
 <div align="center">
 
 > 🔒 Most of my work lives in private repositories.
-> The public repo [`backupd`](https://github.com/Legendary3731/backupd) gives a glimpse of it.
+> My [public repositories](https://github.com/Legendary3731?tab=repositories) give a glimpse of it.
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Legendary3731&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff)](https://github.com/Legendary3731)
 
